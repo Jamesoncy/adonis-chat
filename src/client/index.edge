@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "app" class="no-js">
+<head>
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Free Responsive Admin Theme - ZONTAL</title>
+  <!-- inject:css -->
+  <!-- endinject -->
+</head>
+<body class="sidebar-collapse">
+  <app-header></app-header>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <ui-view></ui-view>
+  <app-footer></app-footer>
+  
+
+<script>(function () {
+  window.API_URL = '<%= API_URL %>'
+})();
+</script>
+<!-- inject:js -->
+
+<!-- endinject-->
+<div class="backdrop-modal"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<div class="page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url('/img/login.jpg')"></div>
+        <div class="container">
+          <div class="col-md-4 content-center">
+            <div class="card card-login card-plain">
+              <form class="form" method="" action="">
+                <div class="header header-primary text-center">
+                  <div class="icon-only logo-container">
+                    <i class="now-ui-icons users_single-02"></i>
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="input-group form-group-no-border input-lg">
+                    <span class="input-group-addon">
+                      <i class="now-ui-icons users_circle-08"></i>
+                    </span>
+                    <input ng-model="$ctrl.formData.username" type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="input-group form-group-no-border input-lg">
+                    <span class="input-group-addon">
+                      <i class="now-ui-icons ui-1_email-85"></i>
+                    </span>
+                    <input ng-model="$ctrl.formData.email" type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="input-group form-group-no-border input-lg">
+                    <span class="input-group-addon">
+                      <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                    </span>
+                    <input ng-keyup="$event.keyCode === 13 && $ctrl.doRegister()" ng-model="$ctrl.formData.password" type="text" placeholder="Password" class="form-control" />
+                  </div>
+                </div>
+                <div class="footer text-center">
+                  <a href="" ng-click="$ctrl.doRegister()" class="btn btn-primary btn-round btn-lg btn-block">Register</a>
+                </div>
+                <div class="pull-left">
+                  <h6>
+                    <a href="" ui-sref="app.login" class="link">Login</a>
+                  </h6>
+                </div>
+                <div class="pull-right">
+                  <h6>
+                    <a href="" ui-sref="app.reset" class="link">Forgot password?</a>
+                  </h6>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <app-footer></app-footer>
+      </div>
+      
